@@ -1,6 +1,8 @@
 # This script only normalizes the data
 # We subtract the minimum in the region above 800nm
 # and multiply by the maximum in that region.
+# We save the normalized data and produce plots for it
+
 
 # Read all the data files
 mb <- read.table("Methylene_blue.dat")
