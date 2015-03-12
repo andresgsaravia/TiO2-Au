@@ -111,7 +111,7 @@ dev.off()
 
 png(filename = "Methylene_blue_anatase0.73_brookite0.27_normalized.png", width = 600, height = 450, units = "px")
 plot(mbAn0.73Br0.27_norm$Wavelength, mbAn0.73Br0.27_norm$min0, type = "n", 
-     xlim=c(200,1000), ylim=c(0,6), xlab = "Wavelength (nm)", ylab = "Absorbance (a.u.)")
+     xlim=c(200,1000), ylim=c(0,4), xlab = "Wavelength (nm)", ylab = "Absorbance (a.u.)")
 lines(mbAn0.73Br0.27_norm$Wavelength, mbAn0.73Br0.27_norm$min0, type = "l", col = pal[1])
 lines(mbAn0.73Br0.27_norm$Wavelength, mbAn0.73Br0.27_norm$min5, type = "l", col = pal[2])
 lines(mbAn0.73Br0.27_norm$Wavelength, mbAn0.73Br0.27_norm$min15, type = "l", col = pal[3])
