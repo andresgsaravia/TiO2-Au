@@ -1,4 +1,4 @@
-# Here we calculate the integrals in the region 500-800nm
+# Here we calculate the integrals in the region 625-680nm
 # for the normalized datasets.
 
 # Read all the data files
@@ -16,8 +16,8 @@ mbAn0.73Br0.27_spl   <- apply(mbAn0.73Br0.27_norm[,-1], 2, splinefun, x = mbAn0.
 mbAn0.73Br0.27Au_spl <- apply(mbAn0.73Br0.27Au_norm[,-1], 2, splinefun, x = mbAn0.73Br0.27Au_norm$Wavelength)
 
 # Integrate
-low_limit <- 500
-up_limit  <- 800
+low_limit <- 625
+up_limit  <- 680
 tol <- 1e-3
 mb_int               <- lapply(mb_spl, integrate, lower = low_limit, upper = up_limit, subdivisions = 300, rel.tol = tol)
 mbAn0.28Br0.72_int   <- lapply(mbAn0.28Br0.72_spl, integrate, lower = low_limit, upper = up_limit, subdivisions = 300, rel.tol = tol)
