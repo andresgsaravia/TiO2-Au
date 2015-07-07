@@ -3,7 +3,7 @@ set terminal pngcairo enhanced size 600,450 font "Helvetica, 10"
 set style data lines
 set output "Methylene_blue_anatase0.73_brookite0.27_normalized.png"
 
-set title "Methylene blue, anatase (0.28), brookite (0.72) and Au"
+set title "Methylene blue, anatase (0.28) and brookite (0.72)"
 set xlabel "Wavelength (nm)"
 set ylabel "Absorbance (a.u.)"
 set xrange[180:1020]
